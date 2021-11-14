@@ -1,1 +1,3 @@
-# mac_ocr_translator
+# mac-ocr-translator
+
+- `pip install -r requirements.txt`
