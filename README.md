@@ -1,0 +1,1 @@
+# mac_ocr_translator
