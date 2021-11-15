@@ -1,1 +1,2 @@
-pynput==1.7.4
+# https://github.com/moses-palmer/pynput/issues/420 추후 릴리즈하면 반영
+git+https://github.com/moses-palmer/pynput.git@master
