@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
 import pyperclip
 
+from dialog.dialog_manager import show
 from keyevent.key_event_listener import listen
 from ocr.ocr_manager import ocr
 from screencapture.screen_capture_manager import capture_screen
@@ -14,8 +16,7 @@ def on_shortcut_triggered():
     if config["copy_to_clipboard"]:
         pyperclip.copy(text)
     result = translate(text)
-    print(text)
-    print(result)
+    show(text, result)
 
 
 if __name__ == '__main__':

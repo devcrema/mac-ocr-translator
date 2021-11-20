@@ -28,10 +28,6 @@ def check_shortcut(key: Key, pressed: bool) -> bool:
 def on_release(key):
     check_shortcut(key, False)
 
-    if key == keyboard.Key.esc:
-        # Stop listener
-        return False
-
 
 def listen(on_shortcut_triggered):
     def on_press(key):
