@@ -1,5 +1,7 @@
 # mac-ocr-translator
 
+![sample_record](record.gif)
+
 ## installation
 - `pip install -r requirements.txt`
 - `brew install imagemagick`
