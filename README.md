@@ -20,6 +20,7 @@
 - [x] python key event that trigger screenshot
 - [x] apply ocr
 - [x] translator (https://github.com/ssut/py-googletrans)
-- [x] overlay result
+- [x] show result
 - [ ] python running in background and launch at login
-- [ ] close result by key event
+- [ ] gui library 
+- [ ] preference
