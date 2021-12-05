@@ -17,6 +17,7 @@ def check_shortcut(key: Key, pressed: bool) -> bool:
             shortcut_combination[Key.cmd] = pressed
         if key == Key.shift:
             shortcut_combination[Key.shift] = pressed
+    print(shortcut_combination)
     for result in shortcut_combination.values():
         if not result:
             is_processing = False

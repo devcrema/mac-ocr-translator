@@ -13,6 +13,8 @@ config = {"copy_to_clipboard": False}
 def on_shortcut_triggered():
     image_path = capture_screen()
     text = ocr(image_path)
+    if text is None:
+        return
     if config["copy_to_clipboard"]:
         pyperclip.copy(text)
     result = translate(text)
