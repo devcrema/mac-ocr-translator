@@ -10,6 +10,7 @@ def check_shortcut(key: Key, pressed: bool) -> bool:
     if is_processing and pressed:
         return False
     try:
+        # TODO 가끔씩 1이 안풀려서 command + shift만 눌러도 반응하는 경우가 있음, 다른 키도 마찬가지일듯
         if key.char == "1":
             shortcut_combination["1"] = pressed
     except AttributeError:
