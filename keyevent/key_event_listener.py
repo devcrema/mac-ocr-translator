@@ -10,14 +10,15 @@ def check_shortcut(key: Key, pressed: bool) -> bool:
     if is_processing and pressed:
         return False
     try:
-        # TODO 가끔씩 1이 안풀려서 command + shift만 눌러도 반응하는 경우가 있음, 다른 키도 마찬가지일듯
         if key.char == "1":
             shortcut_combination["1"] = pressed
     except AttributeError:
         if key == Key.cmd:
             shortcut_combination[Key.cmd] = pressed
+            shortcut_combination["1"] = False  # 1이 릴리즈되지 않는 이슈로 인해 추가
         if key == Key.shift:
             shortcut_combination[Key.shift] = pressed
+            shortcut_combination["1"] = False  # 1이 릴리즈되지 않는 이슈로 인해 추가
     print(shortcut_combination)
     for result in shortcut_combination.values():
         if not result:
