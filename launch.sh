@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python3 ~/.mac-ocr-translator/src/main.py
+python3 ./main.py
